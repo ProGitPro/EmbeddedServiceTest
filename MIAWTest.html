@@ -1,0 +1,21 @@
+<html>
+<script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00D7Y0000001Rza',
+				'MessagingForInAppAndWebEmbedded',
+				'https://momentum-app-148--demo.sandbox.my.site.com/ESWMessagingForInAppAndWe1706013562529',
+				{
+					scrt2URL: 'https://momentum-app-148--demo.sandbox.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://momentum-app-148--demo.sandbox.my.site.com/ESWMessagingForInAppAndWe1706013562529/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</html>
